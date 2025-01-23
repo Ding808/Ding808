@@ -1,5 +1,3 @@
-# PigeonD
-
 # Hello World! I'm PigeonD, a Software Developer 👋🏼:
 
 # 💻 Tech Stack:
