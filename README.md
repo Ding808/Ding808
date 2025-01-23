@@ -1,6 +1,6 @@
-# 🕊️ Hello World! I'm PigeonD, a Software Developer 👋🏼:
+# 🕊️ Hello World! I'm PigeonD, a Software Developer 👋🏼
 
-# 💻 Tech Stack ✨:
+# 💻 Tech Stack ✨
 [![My Skills](https://skillicons.dev/icons?i=py,java,kotlin,swift,flutter,c,cs,cpp,html,css,js,dotnet,pytorch,gradle,aws,azure,mongodb,bitbucket,sqlite,mysql,docker,firebase,gcp,git,github,stackoverflow,idea,linux,ps,pr,ae,unity,blender,figma,anaconda,visualstudio,vscode,androidstudio,matlab,apple,windows,gmail,twitter,discord,linkedin&perline=15)](https://skillicons.dev)
 
 <picture>
