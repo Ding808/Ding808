@@ -1,7 +1,7 @@
 # Hello World! I'm PigeonD, a Software Developer 👋🏼:
 
 # 💻 Tech Stack:
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,java,kotlin,swift,flutter,dotnet,gradle,c,cs,cpp,anaconda,aws,azure,mongodb,bitbucket,sqlite,docker,gcp,git,github,stackoverflow,idea,linux,ps,py,unity，blender&perline=15)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,java,kotlin,swift,flutter,dotnet,gradle,c,cs,cpp,pytorch,anaconda,aws,azure,mongodb,bitbucket,sqlite,docker,gcp,git,github,stackoverflow,idea,linux,ps,py,unity,blender,figma,gmail&perline=15)](https://skillicons.dev)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ding808/PigeonD/output/github-snake-dark.svg" />
