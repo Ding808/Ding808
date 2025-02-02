@@ -1,0 +1,26 @@
+name: Update GitHub Profile Stats
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"  
+  workflow_dispatch: 
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub Stats
+        run: |
+          curl -o github-stats.svg "https://github-readme-stats.vercel.app/api?username=Ding808&show_icons=true&theme=radical"
+          curl -o languages.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=Ding808&layout=compact&theme=radical"
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Updated GitHub stats"
+          git push
