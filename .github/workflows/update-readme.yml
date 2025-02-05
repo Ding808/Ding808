@@ -18,24 +18,6 @@ jobs:
       - name: Checkout 仓库
         uses: actions/checkout@v3
 
-      # 如果你的更新逻辑是基于 Python 脚本，可以先设置 Python 环境
-      - name: 设置 Python 环境
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-
-      # 安装依赖（如果你有 requirements.txt，请启用此步骤）
-      - name: 安装依赖
-        run: |
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
-      # 运行更新脚本，此处请替换为你自己的更新逻辑
-      - name: 执行更新脚本
-        run: |
-          # 例如，如果你有一个 update_readme.py 脚本：
-          python update_readme.py
-
-      # 如果更新内容有变动，则提交并推送到仓库
       - name: 提交更新
         run: |
           git config user.name "github-actions[bot]"
