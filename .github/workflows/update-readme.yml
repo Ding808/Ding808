@@ -1,38 +1,25 @@
-name: Update GitHub Stats
+name: Update README
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # 每 6 小时更新一次
+    - cron: '0 * * * *'  # 每小时更新一次
   workflow_dispatch:  # 允许手动触发
-  push:
-    branches:
-      - main
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Fetch GitHub Stats and update README
-        env:
-          GH_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
+      - name: Update GitHub Stats
         run: |
-          STATS_URL="https://github-readme-stats.vercel.app/api?username=Ding808&show_icons=true&theme=ambient_gradient&card_width=400&line_height=40&cache_seconds=1800&token=${GH_STATS_TOKEN}"
-          LANGS_URL="https://github-readme-stats.vercel.app/api/top-langs/?username=Ding808&theme=ambient_gradient&card_width=400&cache_seconds=1800&token=${GH_STATS_TOKEN}"
-          TROPHY_URL="https://github-profile-trophy.vercel.app/?username=Ding808&theme=onedark&token=${GH_STATS_TOKEN}"
-
-          curl -s -o README.md "https://raw.githubusercontent.com/Ding808/Ding808/main/README.md"
-
-          sed -i "s|!\[Ding's GitHub stats\](.*)|![Ding's GitHub stats](${STATS_URL})|g" README.md
-          sed -i "s|\[!\[Top Langs\](.*)]|[![Top Langs](${LANGS_URL})]|g" README.md
-          sed -i "s|\[!\[trophy\](.*)]|[![trophy](${TROPHY_URL})]|g" README.md
-
-      - name: Commit and push if changed
+          curl -o README.md "https://github-readme-stats.vercel.app/api?username=Ding808&show_icons=true&theme=ambient_gradient&card_width=400&line_height=40&cache_seconds=1800&token=${{ secrets.GH_STATS_TOKEN }}"
+      
+      - name: Commit and Push
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "github-actions@github.com"
           git add README.md
-          git commit -m "Auto update GitHub stats (including private repositories)" || exit 0
+          git commit -m "Update README stats" || echo "No changes to commit"
           git push
