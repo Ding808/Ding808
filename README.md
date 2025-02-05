@@ -2,7 +2,7 @@
 
 # 💻 Tech Stack ✨
 [![My Skills](https://skillicons.dev/icons?i=py,java,kotlin,swift,flutter,c,cs,cpp,html,css,js,dotnet,pytorch,gradle,aws,azure,mongodb,bitbucket,sqlite,mysql,docker,firebase,gcp,git,github,stackoverflow,idea,linux,ps,pr,ae,unity,blender,figma,anaconda,visualstudio,vscode,androidstudio,matlab,apple,windows,gmail,twitter,discord,linkedin&perline=15)](https://skillicons.dev)
-![Ding's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ding808&show_icons=true&theme=ambient_gradient&card_width=400&line_height=40&cache_seconds=1800)
+![Ding's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ding808&show_icons=true&theme=ambient_gradient&line_height=40&cache_seconds=1800)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Ding808&theme=ambient_gradient&card_width=400&cache_seconds=1800)](https://github.com/anuraghazra/github-readme-stats)
 [![trophy](https://github-profile-trophy.vercel.app/?username=Ding808&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
 
