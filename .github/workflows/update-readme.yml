@@ -1,43 +1,28 @@
-name: Update README
+name: Update GitHub Stats
 
 on:
   schedule:
-    - cron: "0 */6 * * *" # 每6小时更新一次
-  workflow_dispatch: # 允许手动触发
+    - cron: "0 */6 * * *"  
+  workflow_dispatch: 
+  push:
+    branches:
+      - main
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Update GitHub Stats
+      - name: Fetch GitHub Stats
         run: |
-          echo "![Ding's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ding808&show_icons=true&theme=ambient_gradient&card_width=400&line_height=40&cache_seconds=1800)" > stats.md
-
-      - name: Update Top Languages
+          curl -s -o README.md "https://raw.githubusercontent.com/Ding808/Ding808/main/README.md"
+          
+      - name: Commit and push if changed
         run: |
-          echo "[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Ding808&theme=ambient_gradient&card_width=400&cache_seconds=1800)](https://github.com/anuraghazra/github-readme-stats)" > top-langs.md
-
-      - name: Update Trophies
-        run: |
-          echo "[![trophy](https://github-profile-trophy.vercel.app/?username=Ding808&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)" > trophy.md
-
-      - name: Update Snake Animation
-        run: |
-          echo "<picture>
-                  <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://raw.githubusercontent.com/Ding808/PigeonD/output/github-snake-dark.svg\" />
-                  <source media=\"(prefers-color-scheme: light)\" srcset=\"https://raw.githubusercontent.com/Ding808/PigeonD/output/github-snake.svg\" />
-                  <img alt=\"github-snake\" src=\"https://raw.githubusercontent.com/Ding808/PigeonD/output/github-snake.svg\" />
-                </picture>" > snake.md
-
-      - name: Commit and Push Changes
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add stats.md top-langs.md trophy.md snake.md
-          git commit -m "🔄 Auto-update README stats"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Auto update GitHub stats" || exit 0
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
