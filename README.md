@@ -4,7 +4,7 @@
 [![My Skills](https://skillicons.dev/icons?i=py,java,kotlin,swift,flutter,c,cs,cpp,html,css,js,dotnet,pytorch,gradle,aws,azure,mongodb,bitbucket,sqlite,mysql,docker,firebase,gcp,git,github,stackoverflow,idea,linux,ps,pr,ae,unity,blender,figma,anaconda,visualstudio,vscode,androidstudio,matlab,apple,windows,gmail,twitter,discord,linkedin&perline=15)](https://skillicons.dev)
 <div align="center">
 
-  <table border="0" cellpadding="0" cellspacing="0">
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: none;">
     <tr valign="middle"> <td style="padding-right: 15px;">
         <img src="https://github-stats-extended.vercel.app/api?username=PigeonD&show_icons=true&theme=ambient_gradient&card_width=400&line_height=40&cache_seconds=1800" />
       </td>
