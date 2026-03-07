@@ -3,21 +3,11 @@
 # 💻 Tech Stack ✨
 [![My Skills](https://skillicons.dev/icons?i=py,java,kotlin,swift,flutter,c,cs,cpp,html,css,js,dotnet,pytorch,gradle,aws,azure,mongodb,bitbucket,sqlite,mysql,docker,firebase,gcp,git,github,stackoverflow,idea,linux,ps,pr,ae,unity,blender,figma,anaconda,visualstudio,vscode,androidstudio,matlab,apple,windows,gmail,twitter,discord,linkedin&perline=15)](https://skillicons.dev)
 <div align="center">
-
-  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: none;">
-    <tr valign="middle"> <td style="padding-right: 15px;">
-        <img src="https://github-stats-extended.vercel.app/api?username=PigeonD&show_icons=true&theme=ambient_gradient&card_width=400&line_height=40&cache_seconds=1800" />
-      </td>
-      <td>
-        <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=PigeonD&layout=compact&theme=ambient_gradient&card_width=400&cache_seconds=1800" />
-      </td>
-    </tr>
-  </table>
-
+  <img align="middle" src="https://github-stats-extended.vercel.app/api?username=PigeonD&show_icons=true&theme=ambient_gradient&card_width=400&line_height=40&cache_seconds=1800" />
+  &nbsp;&nbsp;
+  <img align="middle" src="https://github-stats-extended.vercel.app/api/top-langs/?username=PigeonD&layout=compact&theme=ambient_gradient&card_width=400&cache_seconds=1800" />
   <br/><br/>
-
-  <img src="https://github-profile-trophy.screw-hand.vercel.app/?username=PigeonD&theme=algolia&column=6&hide=Organizations" />
-
+  <img src="https://github-profile-trophy.screw-hand.vercel.app/?username=PigeonD&theme=algolia&column=7&hide=Organizations" />
 </div>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ding808/PigeonD/output/github-snake-dark.svg" />
